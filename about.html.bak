@@ -1,11 +1,11 @@
-<!-- page for projects -->
+<!-- page for about me -->
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
 
-	<title> Projects Page </title>
+	<title> About Me </title>
 
 	<link href="./main.3f6952e4.css" rel="stylesheet"></head>
 	
@@ -14,7 +14,7 @@
 	<div id="site-border-right"></div>
 	<div id="site-border-top"></div>
 	<div id="site-border-bottom"></div>
-
+</head>
 
 <!-- Naviagation Bar, should be universal across all pages -->
 <header>
@@ -39,32 +39,6 @@
     </div>
   </nav>
 </header>
-  
-  
-<div>
-	<h1>Projects</h1>
-	<div>
-		<h3>GameCubePC</h3>
-		<p> Information about GameCubePC </p>
-	</div>
-	<div>
-		<h3>3D Printed Wooden Violin </h3>
-		<p> Information about Violin </p>
-	</div>
-	<div>
-		<h3>3D Printed Open Computer Case </h3>
-		<p> Information about Case design
-	</div>
-	<div>
-		<h3>Personal Computer</h3>
-		<p>Informatiom about computer building</p>
-	</div>
-</div>
-
-
-
-
-</body>
 
 
 </html>
