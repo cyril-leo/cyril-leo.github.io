@@ -17,7 +17,7 @@
 
 
 <!-- Naviagation Bar, should be universal across all pages -->
-<header class = "navbar">
+<header>
   <nav class="navbar  navbar-fixed-top navbar-inverse">
     <div class="container">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -45,7 +45,7 @@
 	<h1>Projects</h1>
 	<div>
 		<h3>GameCubePC</h3>
-		<p> Information about GameCubePC </p>
+		<p>The GameCube has become a timeless console, however the technology within has not aged as well. Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, soldering iron and a 3d printer, I created a working desktop pc hiding in the shell of a GameCube.</p>
 	</div>
 	<div>
 		<h3>3D Printed Wooden Violin </h3>
