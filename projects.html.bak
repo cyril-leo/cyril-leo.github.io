@@ -40,16 +40,25 @@
   </nav>
   
   
-<div class = "container">
-	<div class = "text-content">
-		<div class = "text-center">
-			<div class = "header">
-				<h1> <b> Projects </b> </h1>
-			</div>
-		</div>
+<div>
+	<h1> Projects </h1>
+	<div>
+		<h3>GameCubePC</h3>
+		<p> Information about GameCubePC </p>
+	</div>
+	<div>
+		<h3>3D Printed Wooden Violin </h3>
+		<p> Information about Violin </p>
+	</div>
+	<div>
+		<h3>3D Printed Open Computer Case </h3>
+		<p> Information about Case design
+	</div>
+	<div>
+		<h3>Personal Computer</h3>
+		<p>Informatiom about computer building</p>
 	</div>
 </div>
-
 
 </header>
 
