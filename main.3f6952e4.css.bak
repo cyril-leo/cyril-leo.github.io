@@ -98,6 +98,8 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 .projectcontent {
 	padding-top:4em;
 	padding-bottom:4em;
+	padding-left:1em;
+	padding-right:2em;
 }
 
 .navbar {
