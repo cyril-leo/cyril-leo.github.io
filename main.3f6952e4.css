@@ -49,6 +49,16 @@ table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url('assets/gifs/droneshot.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #yt-vid {
+    visibility: hidden;
+  }
+}
 @media print{*,:after,:before{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}
 abbr[title]:after{content:" (" attr(title) ")"}
 a[href^="#"]:after,
