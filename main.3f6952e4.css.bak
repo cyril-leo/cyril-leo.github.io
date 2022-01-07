@@ -96,6 +96,7 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 	position: absolute;
 	
 }
+
 @media (min-aspect-ratio: 16/9) {
   .indexbackground { height: 300%; top: -100%; }
 }
@@ -109,6 +110,7 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
+
 
 .pagecontent {
     padding-top: 8em;
