@@ -91,7 +91,13 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 /*# sourceMappingURL=main.70a66962.map*/
 
 .indexbackground {
-	position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+	
 }
 
 @media (min-aspect-ratio: 16/9) {
