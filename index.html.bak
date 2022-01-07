@@ -16,7 +16,7 @@
 
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
 <style>
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     body {
       background-image: url('assets/gifs/droneshot.gif');
       background-repeat: no-repeat;
