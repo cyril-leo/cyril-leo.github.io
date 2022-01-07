@@ -15,6 +15,18 @@
   <title>Cyril's Launchsite</title>  
 
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
+<style>
+  @media only screen and (max-width: 600px) {
+    body {
+      background-image: url('assets/gifs/droneshot.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #yt-vid {
+      visibility: hidden;
+    }
+  }
+</style>
 
 <body class="minimal">
 <div id="site-border-left"></div>
@@ -73,8 +85,8 @@
   
 <!-- to change this background video, change JUST THE VIDEO AND PLAYLIST ID NOTHING ELSE-->  
 <!-- currently set to a98ZaQxnPeI -->
-<div class = "indexbackground" style="position: fixed; z-index: -99; width: 100%; height: 100%">
-		<iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/a98ZaQxnPeI?version=3&playlist=a98ZaQxnPeI&controls=0&autoplay=1&mute=1&start=124&loop=1"
+<div class = "indexbackground" style="position: fixed; z-index: -99;">
+		<iframe id='yt-vid' frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/a98ZaQxnPeI?version=3&playlist=a98ZaQxnPeI&controls=0&autoplay=1&mute=1&start=124&loop=1"
 		allow="accelerometer; autoplay; clipboard-write; mute; replay;
 		encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video not Available</iframe>
 </div>
