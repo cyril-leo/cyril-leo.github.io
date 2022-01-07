@@ -92,7 +92,25 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 
 .indexbackground {
 	top: 0;
+	left: 0;
+	position: absolute;
+	
 }
+
+@media (min-aspect-ratio: 16/9) {
+  .indexbackground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .indexbackground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
 
 .pagecontent {
     padding-top: 8em;
