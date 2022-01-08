@@ -42,6 +42,10 @@
 
 <div class ="pagecontent">
 	<h1>About Me</h1>
+	<div>
+		<h3>Cyril Leo</h3>
+		<p> Insert Infor Here </p>
+	</div>
 	<div class = "aboutmecontent">
 		<h3>Education</h3>
 		<p> Even before graduating highschool, I took advantage of the 

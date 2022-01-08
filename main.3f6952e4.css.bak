@@ -128,7 +128,7 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 }
 
 .navbar {
-	background-color:rgba(0,0,0,0.3);
+	background-color:rgba(0,0,0,0.5);
 }	
 
   @media only screen and (max-width: 1000px) {
