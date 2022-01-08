@@ -114,8 +114,8 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 }
 
 .aboutmecontent {
-	padding-top:8em;
-	padding-bottom:8em;
+	padding-top:2em;
+	padding-bottom:2em;
 	padding-left:1em;
 	padding-right:2em;
 }
@@ -130,3 +130,14 @@ h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:9.5px;
 .navbar {
 	background-color:rgba(0,0,0,0.3);
 }	
+
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-image: url('assets/gifs/droneshot.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #yt-vid {
+      display: none;
+    }
+  }
