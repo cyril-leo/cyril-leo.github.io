@@ -172,14 +172,3 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 .navbar {
 	background-color:rgba(0,0,0,0.5);
 }	
-
-  @media only screen and (max-width: 1000px) {
-    body {
-      background-image: url('assets/gifs/droneshot.gif');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #yt-vid {
-      display: none;
-    }
-  }
