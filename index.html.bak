@@ -23,7 +23,7 @@
       background-size: cover;
     }
     #yt-vid {
-      visibility: hidden;
+      display: none;
     }
   }
 </style>
