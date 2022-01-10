@@ -42,23 +42,25 @@
   
   
 <div class = "pagecontent">
-	<h1>Projects</h1>
-	<div>
-		<h3>GameCubePC</h3>
-		<p>The GameCube has become a timeless console, however the technology within has not aged as well. 
-		Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, 
-		soldering iron and a 3d printer, I created a working desktop pc hiding 
-		in the shell of a GameCube.</p>
+	<h1 style = "padding-left:2em;padding-bottom:10em" >Projects</h1>
+	<div class = "projectcontent" style = "background-image: url(./assets/photos/GameCubePCShot.jpg)">
+		<div>	
+			<h3>GameCubePC</h3>
+			<p>The GameCube has become a timeless console, however the technology within has not aged as well. 
+			Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, 
+			soldering iron and a 3d printer, I created a working desktop pc hiding 
+			in the shell of a GameCube.</p>
+		</div>
 	</div>
-	<div>
+	<div class = "projectcontent">
 		<h3>3D Printed Wooden Violin </h3>
 		<p> Information about Violin </p>
 	</div>
-	<div>
+	<div class = "projectcontent">
 		<h3>3D Printed Open Computer Case </h3>
 		<p> Information about Case design
 	</div>
-	<div>
+	<div class = "projectcontent">
 		<h3>Personal Computer</h3>
 		<p>Informatiom about computer building</p>
 	</div>

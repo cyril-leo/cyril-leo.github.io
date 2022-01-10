@@ -151,8 +151,8 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 
 
 .pagecontent {
-    padding-top: 8em;
-    padding-left: 2em;
+    padding-top: 20em;
+	height: 400px
 }
 
 .aboutmecontent {
@@ -167,6 +167,7 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:4em;
 	padding-left:1em;
 	padding-right:2em;
+	background-size: cover;
 }
 
 .navbar {
