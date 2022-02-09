@@ -165,12 +165,29 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 .projectcontent {
 	padding-top:4em;
 	padding-bottom:4em;
-	padding-left:1em;
+	padding-left:3em;
 	padding-right:2em;
+<<<<<<< HEAD
 	background-size: cover;
-	background-position:5% 65%
+	background-position:5% 60%
+=======
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
+	text-align: left;
 }
 
+.projectimageodd {
+	height: 300px;
+	float: right;
+	margin: 15px 15px 15px 15px;
+>>>>>>> d7c363e683d424d3b282b1b2b322077bc5258911
+}
+
+.projectimageeven {
+	height: 300px;
+	float:left;
+	margin: 0 0 0 15px;	
+}
 .navbar {
 	background-color:rgba(0,0,0,0.5);
 }	
