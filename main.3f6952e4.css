@@ -168,6 +168,7 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-left:1em;
 	padding-right:2em;
 	background-size: cover;
+	background-position:5% 60%
 }
 
 .navbar {
