@@ -167,7 +167,8 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:4em;
 	padding-left:1em;
 	padding-right:2em;
-	background-size: cover;
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
 }
 
 .navbar {
