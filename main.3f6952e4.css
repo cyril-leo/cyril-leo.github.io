@@ -171,11 +171,16 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	background-repeat: no-repeat;
 }
 
-.projectimage {
-	width: 400px;
-	float:right;
+.projectimageodd {
+	height: 400px;
+	float: right;
+	margin: 0 0 0 15px;
 }
 
+.projectimageeven {
+	height: 400px;
+	float:left;
+}
 .navbar {
 	background-color:rgba(0,0,0,0.5);
 }	
