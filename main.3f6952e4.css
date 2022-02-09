@@ -167,9 +167,20 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:4em;
 	padding-left:1em;
 	padding-right:2em;
-	background-size: cover;
+	background-size: 100% 400px;
+	background-repeat: no-repeat;
 }
 
+.projectimageodd {
+	height: 400px;
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+.projectimageeven {
+	height: 400px;
+	float:left;
+}
 .navbar {
 	background-color:rgba(0,0,0,0.5);
 }	
