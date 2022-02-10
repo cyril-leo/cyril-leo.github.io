@@ -167,26 +167,28 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:4em;
 	padding-left:3em;
 	padding-right:2em;
-<<<<<<< HEAD
-	background-size: cover;
-	background-position:5% 60%
-=======
+	height: 500px;
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
 	text-align: left;
 }
 
 .projectimageodd {
-	height: 300px;
+	max-width: 300px;
+	height: auto;
+	width: auto\9; /* ie8 */
+	
 	float: right;
 	margin: 15px 15px 15px 15px;
->>>>>>> d7c363e683d424d3b282b1b2b322077bc5258911
+	border: 5px solid black
+
 }
 
-.projectimageeven {
-	height: 300px;
+.projectimageeven {	
+	height:300px;
 	float:left;
-	margin: 0 0 0 15px;	
+	margin: 15px 15px 15px 15px;
+	border: 5px solid black
 }
 .navbar {
 	background-color:rgba(0,0,0,0.5);
