@@ -1,12 +1,12 @@
-<!-- page for projects -->
+<!-- page for contacting me -->
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-
-	<title> Projects Page </title>
-
+	
+	<title> Drone Footage </title>
+	
 	<link href="./main.3f6952e4.css" rel="stylesheet"></head>
 	
 	<body class="minimal">
@@ -14,7 +14,7 @@
 	<div id="site-border-right"></div>
 	<div id="site-border-top"></div>
 	<div id="site-border-bottom"></div>
-
+</head>
 
 <!-- Naviagation Bar, should be universal across all pages -->
 <header>
@@ -39,41 +39,17 @@
     </div>
   </nav>
 </header>
-  
-  
-<div class = "pagecontent">
-	<h1 style = "padding-left:2em;padding-bottom:2em" >Projects</h1>
-	<div class = "projectcontent" <!--style = "background-image: url(./assets/photos/GameCubePCShotCropped.jpg)"-->>
-		<div>	
-			<img src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
-			<h3>GameCubePC</h3>
-			<p style = "inherit">The GameCube has become a timeless console, however the technology within has not aged as well. 
-			Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, 
-			soldering iron and a 3d printer, I created a working desktop pc hiding 
-			in the shell of a GameCube.</p>
-			
-		</div>
-	</div>
-	<div class = "projectcontent">
-		<img src = "./assets/photos/UnfinishedViolinDisplay.jpg" class = "projectimageeven"> 
-		<h3 style = "inherit">3D Printed Wooden Violin </h3>
-		<p style = "inherit"> Information about Violin </p>
-		<img src = "./assets/photos/ViolinFinishedPrint.jpg" style = "" class = "projectimageeven"> 
-	</div>
-	<div class = "projectcontent">
-		<h3 style = "inherit">3D Printed Open Computer Case </h3>
-		<p style = "inherit"> Information about Case design
-	</div>
-	<div class = "projectcontent">
-		<h3 style = "inherit">Personal Computer</h3>
-		<p style = "inherit" >Informatiom about computer building</p>
-	</div>
-</div>
 
 
 
+<form style= "padding: 10em" action=”mailto:cyril.leo.here@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+Name:<br>
+<input type=”text” size=”19″ name=”ContactName”><br><br>
+Message:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
+</textarea><br><br> <input type=”submit” value=”Submit”> </form>
 
-</body>
+
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
