@@ -167,20 +167,21 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:4em;
 	padding-left:3em;
 	padding-right:2em;
+	height: 400px;
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
 	text-align: left;
 }
 
 .projectimageodd {
-	height: 300px;
+	height:400px;
 	float: right;
 	margin: 15px 15px 15px 15px;
 
 }
 
-.projectimageeven {
-	height: 300px;
+.projectimageeven {	
+	height:400px;
 	float:left;
 	margin: 0 0 0 15px;	
 }
