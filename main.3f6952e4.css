@@ -193,10 +193,15 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	max-width: 300px;
 	height: auto;
 	width: auto\9; /* ie8 */
-	float:left;
+	float: left;
 	margin: 15px 15px 15px 15px;
 	border: 5px solid black;	
 }
+
+.projectspacer {
+	height: 100px;
+}
+
 .navbar {
 	background-color:rgba(0,0,0,0.5);
 }	
