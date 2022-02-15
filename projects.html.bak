@@ -59,7 +59,7 @@
 	<div class = "projectspacer"></div>
 	
 	<div style = "height: 300px" class = "projectcontent">
-		<img style = "height:200px" src = "./assets/photos/3DPrintedPhoneCase.jpg" class = "projectimageeven">
+		<img style = "height:180px" src = "./assets/photos/3DPrintedPhoneCase.jpg" class = "projectimageeven">
 		<h3 style = "inherit">3D Printed Phone Case</h3>
 		<p style = "inherit" >While phone cases are very cheap and readily available, they lack creativity that 
 		I love to have in my projects. That's why I turned my phone case into one of those projects. To create
