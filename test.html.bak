@@ -24,7 +24,7 @@
 <body>
     <h2>Image inside Auto-height Div</h2>
     <div class="box">
-        <img src="images/sky.jpg" alt="Cloudy Sky">
+        <img src="./assets/photos/GameCubePCShotCropped.jpg" alt="Cloudy Sky">
     </div>
     <br>
     <h2>Image inside Portrait Div</h2>

@@ -44,7 +44,7 @@
 <div class = "pagecontent">
 	<h1 style = "padding-left:2em;padding-bottom:2em" >Projects</h1>
 	
-	<div style = "height: 400px" class = "projectcontent" <!--style = "background-image: url(./assets/photos/GameCubePCShotCropped.jpg)"-->>
+	<div style = "height: 400px" class = "projectcontent" >
 		<div>	
 			<img style = "height:250px" src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
 			<h3>GameCubePC</h3>
