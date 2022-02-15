@@ -43,9 +43,10 @@
   
 <div class = "pagecontent">
 	<h1 style = "padding-left:2em;padding-bottom:2em" >Projects</h1>
-	<div class = "projectcontent" <!--style = "background-image: url(./assets/photos/GameCubePCShotCropped.jpg)"-->>
+	
+	<div style = "height: 400px" class = "projectcontent" <!--style = "background-image: url(./assets/photos/GameCubePCShotCropped.jpg)"-->>
 		<div>	
-			<img src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
+			<img style = "height:250px" src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
 			<h3>GameCubePC</h3>
 			<p style = "inherit">The GameCube has become a timeless console, however the technology within has not aged as well. 
 			Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, 
@@ -54,19 +55,43 @@
 			
 		</div>
 	</div>
-	<div class = "projectcontent">
-		<img src = "./assets/photos/UnfinishedViolinDisplay.jpg" class = "projectimageeven"> 
-		<h3 style = "text-align: right">3D Printed Wooden Violin </h3>
-		<p style = "inherit"> Information about Violin </p> 
+	
+	<div class = "projectspacer"></div>
+	
+	<div style = "height: 300px" class = "projectcontent">
+		<img style = "height:200px" src = "./assets/photos/3DPrintedPhoneCase.jpg" class = "projectimageeven">
+		<h3 style = "inherit">3D Printed Phone Case</h3>
+		<p style = "inherit" >While phone cases are very cheap and readily available, they lack creativity that 
+		I love to have in my projects. That's why I turned my phone case into one of those projects. To create
+		this case, I traced an image taken from the animated music video, "The Wolf" by Siamés, then developed
+		three separate models that could be overlapped in CURA, my 3D printing slicer of choice. This case is
+		made of blue TPU, black PLA, and glow in the dark PLA. The next version will add white PLA into the case 
+		and dedicate two layers of PLA to making the design. 
+		</p>
 	</div>
+	
+	<div class = "projectspacer"></div>
+	
+	<div style = "height: 600px" class = "projectcontent">
+		<img style = "height:515px" src = "./assets/photos/UnfinishedViolinDisplay.jpg" class = "projectimageodd"> 
+		<h3 style = "text-align: right">3D Printed Wooden Violin </h3>
+		<p style = "text-align: right"> Information about Violin </p> 
+	</div>
+	
+	<div class = "projectspacer"></div>
+	
 	<div class = "projectcontent">
 		<h3 style = "inherit">3D Printed Open Computer Case </h3>
 		<p style = "inherit"> Information about Case design
 	</div>
+	
+	<div class = "projectspacer"></div>
+	
 	<div class = "projectcontent">
 		<h3 style = "inherit">Personal Computer</h3>
 		<p style = "inherit" >Informatiom about computer building</p>
 	</div>
+	
 </div>
 
 
