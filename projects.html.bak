@@ -59,7 +59,7 @@
 	
 	<div style = "height: 325px" class = "projectcontent">
 		<img style = "height:180px" src = "./assets/photos/3DPrintedPhoneCase.jpg" class = "projectimageeven">
-		<h3 style = "inherit">3D Printed Phone Case</h3>
+		<h3 style = "font-size: 30px">3D Printed Phone Case</h3>
 		<p style = "inherit" >While phone cases are very cheap and readily available, they lack creativity that I love to have in my projects. That's why I turned my phone case into one of those projects. To create this case, I traced an image taken from the animated music video, "The Wolf" by Siamés, then developed three separate models that could be overlapped in CURA, my 3D printing slicer of choice. This case is made of blue TPU, black PLA, and glow in the dark PLA. The next version will add white PLA into the case and dedicate two layers of PLA to making the design. 
 		</p>
 		<a href=""> For more on this project, check out this repository!</a>
@@ -70,7 +70,7 @@
 	<div style = "height: 625px" class = "projectcontent">
 		<img style = "height:515px" src = "./assets/photos/UnfinishedViolinDisplay.jpg" class = "projectimageodd"> 
 		<h3 style = "inherit">3D Printed Wooden Violin </h3>
-		<p style = "inherit">During the most isolating parts of the pandemic, I decided I would begin to learn a second instrument. The choice I made was the violin. However, the price of a new violin kit was about 120 dollars. At the same time, I learned about the <a href = "https://www.hovalabs.com/hovalin" target="_blank">Hovalin, a 3D printable violin </a>, and wood filament, a mixture of wood fibers and PLA that creates a printable material that sets much like real wood, with a lot of the      same properties. After adjusting the model for the expansion of the filament and 3 days of printing, the violin was complete. Tuners, strings, and a bow were purchased for this project.</p>
+		<p style = "inherit">During the most isolating parts of the pandemic, I decided I would begin to learn a second instrument. The choice I made was the violin. However, the price of a new violin kit was about 120 dollars. At the same time, I learned about the <a href = "https://www.hovalabs.com/hovalin" target="_blank">Hovalin, a 3D printable violin</a>, and wood filament, a mixture of wood fibers and PLA that creates a printable material that sets much like real wood, with a lot of the same properties. After adjusting the model for the expansion of the filament and 3 days of printing, the violin was complete. Tuners, strings, and a bow were purchased for this project.</p>
 		<a href=""> For more on this project, check out this repository!</a>	
 	</div>
 	
