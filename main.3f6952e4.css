@@ -155,6 +155,9 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
   .indexbackground { width: 300%; left: -100%; }
 }
 
+.aboutmebackground{
+	background-image: url("./assets/photos/WallyandI.jpg");
+}
 
 .pagecontent {
     padding-top: 20em;
