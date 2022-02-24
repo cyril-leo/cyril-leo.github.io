@@ -43,24 +43,19 @@
 <div class = "pagecontent">
 	<h1 style = "padding-left:2em;padding-bottom:2em" >Projects</h1>
 	
-	<div style = "height: 400px" class = "projectcontent" >
-		<div>	
-			<img style = "height:250px" src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
-			<h3>GameCubePC</h3>
-			<p style = "inherit">The GameCube has become a timeless console, however the technology within has not aged as well. 
-			Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a dremel, 
-			soldering iron and a 3d printer, I created a working desktop pc hiding 
-			in the shell of a GameCube.</p>
-			<!-- <a href=""> For more on this project, check out this repository!</a> -->
-		</div>
+	<div style = "height: 400px" class = "projectcontent" >	
+		<img style = "height:250px" src = "./assets/photos/GameCubePCShotCropped.jpg" class = "projectimageodd"> 
+		<h3 style = "font-size:20px">GameCubePC</h3>
+		<p style = "inherit">The GameCube has become a timeless console, however the technology within has not aged as well. Based on a project done by Youtube Channel Tech by Matt, the purpose of this project was to create a portable gaming machine while still maintaining the pleasurable aesthetics of the GameCube. The original project began to meet these requirements, however it lacked actual use of the handle associated with the game. Using the parts from a barebones pc sold by Asrock, the A300 DeskMini, along with a Dremel, soldering iron and a 3d printer, I created a working desktop pc hiding in the shell of a GameCube. </p>
+		<!-- <a href=""> For more on this project, check out this repository!</a> -->
 	</div>
 	
 	<div class = "projectspacer"></div>
 	
-	<div style = "height: 325px" class = "projectcontent">
+	<div style = "height: 350px" class = "projectcontent">
 		<img style = "height:180px" src = "./assets/photos/3DPrintedPhoneCase.jpg" class = "projectimageeven">
-		<h3 style = "inherit">3D Printed Phone Case</h3>
-		<p style = "inherit" >While phone cases are very cheap and readily available, they lack creativity that I love to have in my projects. That's why I turned my phone case into one of those projects. To create this case, I traced an image taken from the animated music video, "The Wolf" by Siamés, then developed three separate models that could be overlapped in CURA, my 3D printing slicer of choice. This case is made of blue TPU, black PLA, and glow in the dark PLA. The next version will add white PLA into the case and dedicate two layers of PLA to making the design. 
+		<h3 style = "inherit;">3D Printed Phone Case</h3>
+		<p style = "inherit;" >While phone cases are very cheap and readily available, they lack creativity that I love to have in my projects. That's why I turned my phone case into one of those projects. To create this case, I traced an image taken from the animated music video, "The Wolf" by Siamés, then developed three separate models that could be overlapped in CURA, my 3D printing slicer of choice. This case is made of blue TPU, black PLA, and glow in the dark PLA. The next version will add white PLA into the case and dedicate two layers of PLA to making the design. 
 		</p>
 		<!-- <a href=""> For more on this project, check out this repository!</a -->
 	</div>
@@ -78,7 +73,7 @@
 	
 	<div style = "height: 400px" class = "projectcontent">
 		<img style = "height:300px" src = "./assets/photos/3DPrintedServer - IsoShot.jpg" class = "projectimageeven"> 
-		<h3 style = "inherit">3D Printed Open Computer Case </h3>
+		<h3 style = "font-size:20px;inherit">3D Printed Open Computer Case </h3>
 		<p style = "inherit"> Information about Case design </p>
 		<!-- <a href=""> For more on this project, check out this repository!</a> -->
 	</div>
@@ -86,6 +81,7 @@
 	<div class = "projectspacer"></div>
 	
 	<div class = "projectcontent">
+		<img style = "height:515px" src = "./assets/photos/UnfinishedViolinDisplay.jpg" class = "projectimageodd">
 		<h3 style = "inherit">Personal Computer</h3>
 		<p style = "inherit" >Informatiom about computer building</p>
 		<!-- <a href=""> For more on this project, check out this repository!</a> -->

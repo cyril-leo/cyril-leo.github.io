@@ -40,14 +40,22 @@
   </nav>
 </header>
 
-<div class ="pagecontent">
-	<h1 style = "padding-left:2em;padding-bottom:2em">About Me</h1>
-	<div class = "aboutmecontent">
-		<h3>My name is Cyril Leo, an Electromechanical Engineering student at Wentworth Institute of Technology from Hudson, NH. All my life, I wanted nothing more than to innovate new solutions to change the world. Ever since I was young, I have had a fascination with robotics and prosthetics, gained from games like Deus Ex. While fictional, I work to take the fictional and turn it into a reality. Starting with simple electronics to building computers to 3D printing my own models, I’ve always strived to create with my own two hands, whether physical or virtual.</h3>
+<div style = "width: 100%; display: table;" class = "pagecontent">
+	<div style = "display: table-row">
+		<div style = "display: table-cell">
+			<h1 style = "padding-left:2em;padding-bottom:1em">About Me</h1>
+			<div class = "aboutmecontent">
+				<div>
+					<h3>My name is Cyril Leo, an Electromechanical Engineering student at Wentworth Institute of Technology. All my life, I wanted nothing more than to innovate new solutions to change the world. Ever since I was young, I have had a fascination with robotics and prosthetics, gained from games like Deus Ex. While fictional, I work to take the fictional and turn it into a reality. Starting with simple electronics to building computers to 3D printing my own models, I’ve always strived to create with my own two hands, whether physical or virtual.</h3>
+				</div>
+			</div>
+		</div>
+		<div style = "display: table-cell;width:200px">
+			<img class = "aboutmeimage" src = "./assets/photos/WallyandI.jpg">
+			<p style = "font-size:12px;text-align:center"> My dog Wally and I </p>
+		</div>
 	</div>
 </div>
-
-
 
 
 <script>
