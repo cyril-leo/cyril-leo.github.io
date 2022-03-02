@@ -49,7 +49,6 @@
           <li><a href="./index.html" title="">Home</a></li>
           <li><a href="./about.html" title="">About me</a></li>
 		  <li><a href="./projects.html" title="">Projects</a></li>
-          <li><a href="./droneshots.html" title="">Drone Photography</a></li>
           <li><a href="./contact.html" title="">Contact</a></li>
         </ul>
       </div> 
@@ -65,12 +64,12 @@
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
             <div class="text-content">
-              <h1>Hello,<br>
+              <h1>Cyril Leo<br>
                 <span id="typed-strings">
-                  <span>I'm Cyril Leo</span>
-                  <span>Electromechanical Engineer</span>
-                  <span>CAD Designer</span>
-                  <span>Ready to Learn</span>
+					<span>Electromechanical Engineer</span>
+					<span>CAD Designer</span>
+					<span>Innovator</span>
+					<span>Ready to Learn</span>
                 </span>
                 <span id="typed"></span>
               </h1>
@@ -83,9 +82,9 @@
   
   
 <!-- to change this background video, change JUST THE VIDEO AND PLAYLIST ID NOTHING ELSE-->  
-<!-- currently set to 8wvZFi3fG8s changed from a98ZaQxnPeI -->
+<!-- currently set to a98ZaQxnPeI changed from PgNMxWvQtZk -->
 <div class = "indexbackground" style="position: fixed; z-index: -99;">
-		<iframe id='yt-vid' frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/8wvZFi3fG8s?version=3&playlist=8wvZFi3fG8s&controls=0&autoplay=1&mute=1&start=124&loop=1"
+		<iframe id='yt-vid' frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/PgNMxWvQtZk?version=3&playlist=PgNMxWvQtZk&controls=0&autoplay=1&mute=1&start=124&loop=1"
 		allow="accelerometer; autoplay; clipboard-write; mute; replay;
 		encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video not Available</iframe>
 </div>

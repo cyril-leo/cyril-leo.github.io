@@ -40,7 +40,7 @@
   </nav>
 </header>
 
-<div style = "width: 100%; display: table;" class = "pagecontent">
+<div style = "width: 100%; display: table; padding-top:10em" class = "pagecontent">
 	<div style = "display: table-row">
 		<div style = "display: table-cell">
 			<h1 style = "padding-left:2em;padding-bottom:1em">About Me</h1>
