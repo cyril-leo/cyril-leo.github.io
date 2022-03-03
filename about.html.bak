@@ -32,8 +32,6 @@
           <li><a href="./index.html" title="">Home</a></li>
           <li><a href="./about.html" title="">About me</a></li>
 		  <li><a href="./projects.html" title="">Projects</a></li>
-          
-          <li><a href="./contact.html" title="">Contact</a></li>
         </ul>
       </div> 
     </div>
@@ -46,7 +44,7 @@
 			<h1 style = "padding-left:2em;padding-bottom:1em">About Me</h1>
 			<div class = "aboutmecontent">
 				<div>
-					<h3>My name is Cyril Leo, an Electromechanical Engineering student at Wentworth Institute of Technology. All my life, I wanted nothing more than to innovate new solutions to change the world. Ever since I was young, I have had a fascination with robotics and prosthetics, gained from games like Deus Ex. While fictional, I work to take the fictional and turn it into a reality. Starting with simple electronics to building computers to 3D printing my own models, I’ve always strived to create with my own two hands, whether physical or virtual.</h3>
+					<h3>My name is Cyril Leo, an Electromechanical Engineering student at Wentworth Institute of Technology. All my life, I wanted nothing more than to innovate new solutions to change the world. Ever since I was young, I have had a fascination with robotics and prosthetics, gained from games like Deus Ex. While fictional, I work to take the fictional and turn it into a reality. Starting with simple electronics to building computers to 3D printing my own models, I’ve always strived to create with my own two hands, whether physical or virtual. I will continue to challenge myself and I hope that will challenge me as well.h3>
 				</div>
 			</div>
 		</div>
