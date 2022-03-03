@@ -156,12 +156,13 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 }
 
 .pagecontent {
-    padding-top: 20em;
+    padding-top: 10em;
+	padding-right: 10em;
 	overflow: auto;
 }
 
 .aboutmeimage {
-	height:30em;
+	width: 100%;
 	position: center;
 	margin: 5em 5em 2em 5em;
 	border: 5px solid black;
@@ -173,6 +174,7 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	padding-bottom:2em;
 	padding-left:5em;
 	padding-right:5em;
+	width:100%
 }
 
 .projectcontent {
