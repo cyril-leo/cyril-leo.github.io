@@ -82,7 +82,7 @@
 	<div class = "projectspacer"></div>
 	
 	<div style = "height: 25em" class = "projectcontent">
-		<img style = "height:12em" src = "./assets/photos/3DPrintedServer - IsoShot.jpg" class = "projectimageodd"> 
+		<img style = "height:20em" src = "./assets/photos/3DPrintedServer - IsoShot.jpg" class = "projectimageodd"> 
 		<h3 style = "font-size:20px;inherit">3D Printed Computer Frame </h3>
 		<p style = "inherit">During the pandemic, as most of my schoolwork went online, never had to access that work outside of my home. Once in person classes began again, I lost the ability to access this work outside of my home. I decided that instead of carrying a giant tower around, I would construct a server that could run 24/7. I had all the components for this computer except for the case, so I chose to 3D print a custom frame for the parts. I designed it to be able to print as one part, hold MicroATX computer parts, and keep the footprint no bigger than the size of the motherboard. The frame itself is made of PLA with threaded brass inserts melted into place to hold the computer parts securely. I can access the machine on any computer or phone using a free remote desktop application called NoMachine.</p>
 		<!-- <a href=""> For more on this project, check out this repository!</a> -->
