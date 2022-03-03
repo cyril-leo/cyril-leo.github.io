@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<body style="background-color:powderblue;">
 
 <head>
-
+	<meta id="docViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, user-scalable=yes"/>
 	<title> About Me </title>
 
 	<link href="./main.3f6952e4.css" rel="stylesheet"></head>
@@ -48,7 +49,7 @@
 				</div>
 			</div>
 		</div>
-		<div style = "display: table-cell;width:200px">
+		<div style = "display: table-cell;width:20em">
 			<img class = "aboutmeimage" src = "./assets/photos/WallyandI.jpg">
 			<p style = "font-size:12px;text-align:center"> My dog Wally and I </p>
 		</div>
