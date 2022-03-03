@@ -163,7 +163,7 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 .aboutmeimage {
 	height:400px;
 	position: center;
-	margin: 5em 5em 5em 5em;
+	margin: 5em 5em 2em 5em;
 	border: 5px solid black;
 	
 }
@@ -185,8 +185,9 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 	background-color: rgba(0,0,0,0.3); 
 	border: 2px solid black;
 	text-align: left;
-	font-size: 12px;
-    font-size: 1.3vw;
+	font-size: 2em;
+
+	
 }
 
 .projectimageodd {	
