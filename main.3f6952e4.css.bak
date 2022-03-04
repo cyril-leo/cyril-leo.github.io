@@ -157,7 +157,6 @@ a.bg-info:focus,a.bg-info:hover{background-color:#afd9ee}
 
 .pagecontent {
     padding-top: 10em;
-	padding-right: 10em;
 	overflow: auto;
 }
 
