@@ -1,101 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- hey there thanks for checking out my code, hope it is up to your standards, virtual person -->
-
 <head>
-  <meta content="Portfolio for Cyril Leo" name="Cyril Leo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril Leo - Electromechanical Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <!--<link rel="launch screen image" sizes="180x180" href="./assets/photos/batsymbol.jpg"> -->
-  <!--<link href="./assets/favicon.ico" rel="icon"> -->
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --background-light: #f8f9fa;
+            --text-color: #333;
+        }
 
-  <title>Cyril's Launchsite</title>  
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
-<style>
-  @media only screen and (max-width: 1000px) {
-    body {
-      background-image: url('assets/gifs/droneshot.gif');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    #yt-vid {
-      display: none;
-    }
-  }
-</style>
+        .header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            overflow: hidden;
+        }
 
-<body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">Home</a></li>
-          <li><a href="./about.html" title="">About me</a></li>
-		  <li><a href="./projects.html" title="">Projects</a></li>
-        </ul>
-      </div> 
-    </div>
-  </nav>
-</header>
+        .video-background iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
 
-<!-- style="background-image: url('./assets/gifs/droneshot.gif')"  -->  
-<!-- Add your site or app content here -->
-<div class="hero-full-container background-image-container white-text-container" >
-	<div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Cyril Leo<br>
-                <span id="typed-strings">
-					<span>Electromechanical Engineer</span>
-					<span>CAD Designer</span>
-					<span>Innovator</span>
-					<span>Ready to Learn</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
+        /* For 16:9 aspect ratio */
+        @media (min-aspect-ratio: 16/9) {
+            .video-background iframe {
+                height: 56.25vw; /* 100 * 9/16 */
+            }
+        }
+
+        /* For screens taller than 16:9 */
+        @media (max-aspect-ratio: 16/9) {
+            .video-background iframe {
+                width: 177.78vh; /* 100 * 16/9 */
+            }
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(44, 62, 80, 0.95);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .about {
+            background-color: var(--background-light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: url('assets/photos/WallyandI.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .about-text h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-category {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;  
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            object-position: center;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-skills {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact {
+            background-color: var(--background-light);
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home" class="header">
+  <div class="video-background">
+      <iframe 
+          src="https://www.youtube.com/embed/PgNMxWvQtZk?controls=0&autoplay=1&mute=1&loop=1&playlist=PgNMxWvQtZk&enablejsapi=1&rel=0&showinfo=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>  
+      </iframe>
+  </div>
+  <div class="header-overlay"></div>
+  <div class="header-content">
+    <div class="hero-full-container background-image-container white-text-container" >
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="hero-full-wrapper">
+                <div class="text-content">
+                  <h1>Cyril Leo<br>
+                    <span id="typed-strings">
+              <span>Electromechanical Engineer</span>
+              <span>CAD Designer</span>
+              <span>Innovator</span>
+              <span>Ready to Learn</span>
+                    </span>
+                    <span id="typed"></span>
+                  </h1>
+                </div>
+              </div>
             </div>
           </div>
+      </div>		
+     </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+       type();
+       movingBackgroundImage();
+    });
+  </script>
+  
+  
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+
+</header>
+
+
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image"></div>
+            <div class="about-text">
+                <h3>Systems Engineer with Interdisciplinary Expertise</h3>
+                <p>I'm an Electromechanical Engineer with experience in product development, automation, and systems integration. My background combines mechanical design, software development, and laboratory expertise to create innovative solutions for complex challenges.</p>
+                <p>I specialize in developing custom fixtures, troubleshooting electromechanical systems, and implementing automated solutions. My unique combination of skills includes everything from 3D printing and PCB repair to bacterial sample preparation and jewelry making.</p>
+            </div>
         </div>
-      </div>
-	</div>		
- </div>
-  
-  
-<!-- to change this background video, change JUST THE VIDEO AND PLAYLIST ID NOTHING ELSE-->  
-<!-- currently set to a98ZaQxnPeI changed from PgNMxWvQtZk -->
-<div class = "indexbackground" style="position: fixed; z-index: -99;">
-		<iframe id='yt-vid' frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/PgNMxWvQtZk?version=3&playlist=PgNMxWvQtZk&controls=0&autoplay=1&mute=1&loop=1"
-		allow="accelerometer; autoplay; clipboard-write; mute; replay;
-		encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video not Available</iframe>
-</div>
+    </div>
+</section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     type();
-     movingBackgroundImage();
-  });
-</script>
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Design & Manufacturing</h3>
+                <ul class="skill-list">
+                    <li>SolidWorks (Certified Associate)</li>
+                    <li>Fusion 360</li>
+                    <li>3D Printing (FDM, SLA)</li>
+                    <li>Milling & Lathe Operation</li>
+                    <li>ProtoTrak & CAMworks</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Root Cause Analysis</li>
+                    <li>Electronics Repair</li>
+                    <li>PCB Troubleshooting</li>
+                    <li>System Integration</li>
+                    <li>Laboratory Techniques</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>C/C#</li>
+                    <li>Lua</li>
+                    <li>Python</li>
+                    <li>MATLAB</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
 
-<script type="text/javascript" src="./main.70a66962.js"></script></body>
+            <div class="project-card">
+                <div class="project-image">
+                  <img src="./assets/photos/EngagementRing.jpg" alt="Custom Engagement Ring">
+                </div>
+                <div class="project-info">
+                    <h3>Custom Engagement Ring</h3>
+                    <p>To propose to my then girlfriend of 7 years, I made a promise to myself to design and manufacture her engagement ring as a sign of all the growth and happiness I have had with her. Giving myself a three month window, I learned how to solder a ring band, create a stone setting, and polish a ring. I consulted multiple jewelry repair shops and created pratice rings out of sterling silver. For the final ring, I created it out of white gold wire, using white gold solder and a butane braising torch to join all parts together. She said yes, so I now have a project to maintain for the rest of my life.</p>
+                    <div class="project-skills">
+                      <span class="skill-tag">CAD Design</span>
+                      <span class="skill-tag">Gold Soldering</span>
+                      <span class="skill-tag">Stone Setting</span>
+                      <span class="skill-tag">Prototyping</span>
+                      <span class="skill-tag">Metal Working</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                  <img src = "assets/photos/Violin-Polished.jpg" width="25%"> 
+                  <img src = "assets/photos/UnfinishedViolinDisplay.jpg">
+                </div>
+                <div class="project-info">
+                    <h3>3D Printed Violin</h3>
+                    <p>During the most isolating parts of the pandemic, I decided I would begin to learn a second instrument. The choice I made was the violin. However, the price of a new violin kit was about 120 dollars. At the same time, I learned about the <a href = "https://www.hovalabs.com/hovalin" target="_blank">Hovalin, a 3D printable violin</a>, and wood filament, a mixture of wood fibers and PLA that creates a printable material that sets much like real wood, with a lot of the same properties. After adjusting the model for the expansion of the filament and 3 days of printing, the violin was complete. Tuners, strings, and a bow were purchased for this project.</p>
+                    <div class="project-skills">
+                      <span class="skill-tag">3D Printing</span>
+                      <span class="skill-tag">Material Science</span>
+                      <span class="skill-tag">Design Optimization</span>
+                      <span class="skill-tag">Acoustics</span>
+                      <span class="skill-tag">Prototyping</span>
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-card">
+              <div class="project-image">
+                <img src = "./assets/photos/3DPrintedPhoneCase.jpg">
+              </div>
+              <div class="project-info">
+                  <h3>3D Printed Violin</h3>
+                  <p>While phone cases are cheap and readily available, they lack creativity. That's why I wanted to design and 3D print my own. To create this case, I traced an image taken from the animated music video, "The Wolf" by Siamés, then developed three separate models that could be overlapped in CURA, my 3D printing slicer of choice. This case is made of blue TPU, black PLA, and glow in the dark PLA. The next version will add white PLA into the case and dedicate two layers of PLA to making the design. </p>
+                  <div class="project-skills">
+                      <span class="skill-tag">3D Printing</span>
+                      <span class="skill-tag">Material Science</span>
+                      <span class="skill-tag">Design Optimization</span>
+                      <span class="skill-tag">Acoustics</span>
+                      <span class="skill-tag">Prototyping</span>
+                  </div>
+              </div>
+          </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                  <img src = "./assets/photos/GameCubePCShotCropped.jpg">
+                </div>
+                <div class="project-info">
+                    <h3>GameCube PC</h3>
+                    <p> The GameCube has become a timeless console; however, the technology within has not aged as well as the console. Based on a project done by <a href = "https://www.youtube.com/watch?v=wINo_Uc3uVU">Youtube channel Tech by Matt</a>, the purpose of this project was to create a portable gaming machine while still maintaining the pleasurable aesthetics of the GameCube. The original project hollowed out the console and added the computer parts, however it lacked actual use of the handle associated with the GameCube. Using the parts from a barebones PC sold by Asrock (the A300 DeskMini) along with a Dremel, soldering iron and a 3D printer, I created a working desktop PC hiding in the shell of a GameCube. </p>
+                    <div class="project-skills">
+                        <span class="skill-tag">3D Printing</span>
+                        <span class="skill-tag">Reverse Engineering</span>
+                        <span class="skill-tag">Design Optimization</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+              </div>
+              <div class="project-info">
+                  <h3>3D Printed Violin</h3>
+                  <p>Successfully designed and 3D printed a functional violin using wood-based filament, including modifications to accommodate material properties and ensure optimal sound quality.</p>
+                  <div class="project-skills">
+                      <span class="skill-tag">3D Printing</span>
+                      <span class="skill-tag">Material Science</span>
+                      <span class="skill-tag">Design Optimization</span>
+                      <span class="skill-tag">Acoustics</span>
+                      <span class="skill-tag">Prototyping</span>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me (WORK IN PROGRESS)</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Cyril Leo. All rights reserved.</p>
+</footer>
+</body>
 </html>
