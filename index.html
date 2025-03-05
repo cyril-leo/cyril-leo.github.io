@@ -379,6 +379,145 @@
             margin-bottom: 1.5rem;
         }
 
+        .employment-timeline {
+        background-color: var(--background-light);
+        padding: 5rem 2rem;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            animation: fadeIn 1s ease;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            overflow: visible;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-content {
+            position: relative;
+            overflow: visible;
+            transition: all 0.5s ease;
+            height: auto;
+            max-height: 200px;
+        }
+
+        .timeline-hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            max-height: 0;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+            z-index: 10;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        .timeline-hover-image img {
+            width: 100%;
+            height: auto;
+            max-height: none;
+            object-fit: contain;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-content:hover .timeline-hover-image {
+            max-height: 500px; /* Adjust based on your typical image heights */
+            opacity: 1;
+            margin-bottom: 20px; /* Add some space below the image */
+        }
+
+        .timeline-content:hover .timeline-hover-image img {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .timeline-item {
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item.left::before,
+        .timeline-item.right::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 15px;
+        }
+
+        .timeline-item.left::before {
+            right: -12.5px;
+        }
+
+        .timeline-item.right::before {
+            left: -12.5px;
+        }
+
+        .timeline-content h3 {
+            margin-bottom: 0.5rem;
+            top: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .timeline-content p {
+            margin-top: 0.5rem;
+            top: 1rem;
+        }
+
+        .timeline-date {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .timeline::before {
+            height: auto !important;
+            min-height: 100%;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px; /* Add some space between timeline items */
+        }
+
         input, textarea {
             width: 100%;
             padding: 0.8rem;
@@ -440,6 +579,29 @@
             .linkedin-image {
                 height: 250px;
             }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 25px;
+            }
+
+            .timeline-item.left {
+                left: 0;
+            }
+
+            .timeline-item.right {
+                left: 0;
+            }
+
+            .timeline-item.left::before,
+            .timeline-item.right::before {
+                left: 10px;
+            }
         }
 
         @media (max-width: 1024px) {
@@ -454,6 +616,18 @@
                 max-width: 100%;
             }
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -684,24 +858,91 @@
     </div>
 </section>
 
+<section id="timeline" class="employment-timeline">
+    <div class="container">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Started College</h3>
+                    <p>Joined Wentworth Institute of Technology's ELMC program</p>
+                    <span class="timeline-date">Sept 2018</span>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Electroswitch Corp</h3>
+                    <p>Joined as an Engineering Coop, working on a test fixture for a custom PCB and creating updated assembly drawings for existing products</p>
+                    <span class="timeline-date">May - Aug 2021</span>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Geek Squad</h3>
+                    <p>Worked part-time while going to school as a consultant agent, assisting customers diagnose issues on a wide variety of consumer electronics</p>
+                    <span class="timeline-date">Oct 2021 - April 2022</span>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Day Zero Diagnostics (DZD)</h3>
+                    <p>Joined as an Engineering Intern, working on assembling custom consumables and working on transferring sections of bench assays to a prototype liquid handler</p>
+                    <span class="timeline-date">May - Sept 2022</span>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-hover-image">
+                        <img src="./assets/photos/IMG_4196.HEIC" alt="Graduation Ceremony">
+                    </div>
+                    <h3>Bachelor's Degree in<br>Electromechanical Engineering</h3>
+                    <p>Graduated from Wentworth Institute of Technology</p>
+                    <span class="timeline-date">Aug 2022</span>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Hired Fulltime at DZD</h3>
+                    <p>Joined the Product Realization team fulltime as part of an expansion of the team, moving to working entirely on migrating bench assays to a new prototype integrating a centrifuge, incubation station and gripper.</p>
+                    <span class="timeline-date">Sept 2022 - 2024</span>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Promoted to Systems<br>Engineer I at DZD</h3>
+                    <p>A role change to better describe the more active role I had taken in integration of the bench assay to the instruments. This involved coordinating testing between multiple teams to show the performance of previously migrated processes, then improving them to bring said performance in line with the bench process.</p>
+                    <span class="timeline-date">Sept 2024 - Jan 2025</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 <section id="contact" class="contact">
-  <div class="container">
-      <h2 class="section-title">Contact Me</h2>
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
         <div class="contact-layout">
-      <form class="contact-form" action="https://formspree.io/f/xanqpwba" method="POST">
-          <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-              <textarea name="message" placeholder="Your Message" required></textarea>
-          </div>
-          <!-- Anti-spam honeypot field -->
-          <input type="text" name="_gotcha" style="display:none">
-          <button type="submit">Send Message</button>
-      </form>
+            <form class="contact-form" action="https://formspree.io/f/xanqpwba" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <!-- Anti-spam honeypot field -->
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit">Send Message</button>
+            </form>
             <div class="linkedin-connect">
                 <div class="linkedin-card">
                     <div class="linkedin-image">
@@ -715,8 +956,8 @@
                 </div>
             </div>
         </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 <footer>
     <p>&copy; 2025 Cyril Leo. All rights reserved.</p>
